@@ -1,0 +1,16 @@
+<!--pages/billing/index.wxml-->
+<view class="container">
+  <view class="number">
+    <text>当前单车编号：{{number}}</text>
+  </view>
+  <view class="time">
+    <view class="time-tittle">{{actionText}}</view>
+    <view class="time-content">
+      {{hours}}:{{minutes}}:{{seconds}}
+    </view>
+  </view>
+  <view class="endride">
+    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="movetoIndex"> 回到地图 </button>
+    <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="endride" disabled="{{clickButton}}"> 结束骑行 </button>
+  </view>
+</view>

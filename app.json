@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wallet/index",
+    "pages/charge/index",
+    "pages/user/index",
+    "pages/alert/index",
+    "pages/billing/index",
+    "pages/scanResult/index",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b9dd08",
+    "navigationBarTitleText": "ofo 共享单车",
+    "navigationBarTextStyle": "black"
+  },
+  "permission":{
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

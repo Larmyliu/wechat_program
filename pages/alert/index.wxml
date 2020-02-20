@@ -1,0 +1,32 @@
+<!--pages/alert/index.wxml-->
+<view class="container">
+  <view class="alert-tittle">请选择故障类型</view>
+  <view class="alert-checkBox">
+    <checkbox-group>
+      <checkbox value="私锁私用">私锁私用</checkbox>
+      <checkbox value="车牌损坏">车牌损坏</checkbox>
+      <checkbox value="轮胎坏了">轮胎坏了</checkbox>
+      <checkbox value="车锁坏了">车锁坏了</checkbox>
+      <checkbox value="违规乱停">违规乱停</checkbox>
+      <checkbox value="密码不对">密码不对</checkbox>
+      <checkbox value="刹车坏了">刹车坏了</checkbox>
+      <checkbox value="其他问题">其他问题</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="alert-tittle">拍摄单车周围环境，便于维修师傅找车(最多添加三张图片)</view>
+  <view bindtap="addPhoto" class="imgselect" >
+    <image src="/image/添加图片.png"></image>
+    
+    <view class="imgselected" wx:for="{{src}}" wx:key="{{index}}" wx:for-item="src">
+    <image src="{{src}}" ></image>
+  </view>
+  </view>
+  
+  <view class="alert-input">
+    <input placeholder="车牌号 (车辆损坏不用填)"></input>
+    <input placeholder="备注"></input>
+  </view>
+  <view class="alert-submit">
+    <button type="primary" bindtap="formSubmit">提交</button>
+  </view>
+</view>
